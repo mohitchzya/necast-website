@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Dark Shadow drop -->
+    <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.8"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#C1121F" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Crimson Main 3D Gradient -->
+    <linearGradient id="redMainGrad" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E38"/>
+      <stop offset="30%" stop-color="#E10613"/>
+      <stop offset="70%" stop-color="#A2000A"/>
+      <stop offset="100%" stop-color="#4D0004"/>
+    </linearGradient>
+
+    <!-- Crimson High Bevel Light -->
+    <linearGradient id="redBevelLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF858B"/>
+      <stop offset="50%" stop-color="#E10613"/>
+      <stop offset="100%" stop-color="#800005"/>
+    </linearGradient>
+
+    <!-- Crimson Outer Blade Curve Gradient -->
+    <linearGradient id="redBladeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3D0002"/>
+      <stop offset="40%" stop-color="#A2000A"/>
+      <stop offset="80%" stop-color="#FF1E27"/>
+      <stop offset="100%" stop-color="#FF6B72"/>
+    </linearGradient>
+
+    <!-- Silver Chrome Top Facet -->
+    <linearGradient id="silverTopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#E2E8F0"/>
+      <stop offset="70%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <!-- Silver Chrome Bottom Shadow Facet -->
+    <linearGradient id="silverBottomGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CBD5E1"/>
+      <stop offset="40%" stop-color="#64748B"/>
+      <stop offset="85%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#logoShadow)">
+    <!-- 1. Outer Crescent Blade -->
+    <path d="M 235,80 C 140,95 95,200 135,335 C 120,300 125,210 180,140 C 210,100 230,85 235,80 Z" fill="url(#redBladeGrad)" stroke="#000" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M 230,85 C 150,110 110,210 138,320 C 130,290 135,215 185,148 Z" fill="#FF4D55" opacity="0.6"/>
+
+    <!-- 2. Main Red "A/N" Body -->
+    <path d="M 180,100 L 305,280 L 230,305 L 128,390 L 185,150 Z" fill="url(#redMainGrad)" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M 180,100 L 210,310 L 128,390 Z" fill="url(#redBevelLight)" stroke="#000" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 180,100 L 305,280 L 210,310 Z" fill="url(#redMainGrad)"/>
+    <path d="M 210,310 L 230,305 L 200,240 Z" fill="#200003"/>
+    <path d="M 180,100 L 305,280" stroke="#FFA3A8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- 3. Silver Chrome Right Wing -->
+    <path d="M 228,230 L 375,220 L 340,395 L 235,248 Z" fill="url(#silverTopGrad)" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M 228,230 L 340,395 L 285,320 Z" fill="url(#silverBottomGrad)" stroke="#000" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M 228,230 L 375,220 L 340,395 Z" fill="url(#silverTopGrad)"/>
+    <path d="M 228,230 L 340,395" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Outer Contour Accents -->
+    <path d="M 180,100 L 305,280 L 375,220 L 340,395 L 230,305 L 128,390 Z" fill="none" stroke="#000000" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+</svg>

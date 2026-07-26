@@ -1,3 +1,13 @@
+export type ScreenType = 
+  | 'splash' 
+  | 'home' 
+  | 'overlay' 
+  | 'overlay-settings' 
+  | 'gameplay' 
+  | 'resolution' 
+  | 'bitrate' 
+  | 'settings';
+
 export interface FeatureItem {
   id: string;
   title: string;
@@ -12,18 +22,8 @@ export interface ScreenshotItem {
   title: string;
   subtitle: string;
   description: string;
-  screenType: 'splash' | 'home' | 'setup' | 'live' | 'settings' | 'account';
+  screenType: ScreenType;
   tags: string[];
-}
-
-export interface RoadmapItem {
-  id: string;
-  title: string;
-  category: string;
-  status: 'released' | 'in-progress' | 'planned';
-  votes: number;
-  iconName: string;
-  description: string;
 }
 
 export interface FAQItem {

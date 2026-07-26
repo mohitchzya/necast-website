@@ -22,10 +22,13 @@ export const PreviewVideoModal: React.FC<PreviewVideoModalProps> = ({ isOpen, on
           <div className="flex items-center gap-3">
             <span className="bg-red-600 text-white font-black text-xs px-2.5 py-1 rounded flex items-center gap-1.5 uppercase tracking-wider animate-pulse">
               <span className="w-2 h-2 bg-white rounded-full" />
-              LIVE PREVIEW
+              SNEAK PEEK PREVIEW
+            </span>
+            <span className="bg-slate-900 border border-slate-700 text-slate-300 text-[10px] font-mono px-2 py-0.5 rounded">
+              Coming Soon
             </span>
             <h3 className="text-sm font-bold text-white hidden sm:block">
-              NeCast 1080p 60FPS Mobile Stream Demo
+              NeCast 1440p 60FPS Mobile Stream Demo
             </h3>
           </div>
 
@@ -67,7 +70,7 @@ export const PreviewVideoModal: React.FC<PreviewVideoModalProps> = ({ isOpen, on
               </div>
 
               <div className="bg-black/80 backdrop-blur-md border border-white/10 text-slate-200 text-xs px-3 py-1 rounded-lg font-mono">
-                1080p 60FPS • 6,400 Kbps
+                1440p 60FPS • 16,000 Kbps
               </div>
             </div>
 
@@ -140,7 +143,7 @@ export const PreviewVideoModal: React.FC<PreviewVideoModalProps> = ({ isOpen, on
               <div className="flex-1 p-4 flex flex-col justify-between space-y-3 overflow-hidden">
                 <div className="space-y-2 font-sans text-xs overflow-y-auto max-h-[300px] pr-1">
                   <p className="text-slate-300">
-                    <span className="font-bold text-red-400">StreamQueen:</span> That 1080p 60fps quality is crisp! 🔥
+                    <span className="font-bold text-red-400">StreamQueen:</span> That 1440p 60fps quality is crisp! 🔥
                   </p>
                   <p className="text-slate-300">
                     <span className="font-bold text-blue-400">AndroidGamer:</span> No dropped frames at all on Snapdragon 8!

@@ -7,12 +7,11 @@ export const IntegrationsBar: React.FC = () => {
         <div className="text-xs font-bold text-white/30 uppercase tracking-widest shrink-0">
           Integrated with
         </div>
-        <div className="flex-1 w-full flex items-center justify-between sm:justify-around opacity-50 grayscale hover:grayscale-0 transition-all text-xs sm:text-sm font-bold text-white/80 gap-4">
-          <span className="hover:text-red-500 transition-colors cursor-default">YouTube</span>
-          <span className="hover:text-blue-400 transition-colors cursor-default">Google Cloud</span>
-          <span className="hover:text-purple-400 transition-colors cursor-default">Twitch</span>
-          <span className="hover:text-blue-500 transition-colors cursor-default">Facebook</span>
-          <span className="hover:text-pink-400 transition-colors cursor-default">TikTok</span>
+        <div className="flex-1 w-full flex items-center justify-between sm:justify-around opacity-60 hover:opacity-100 transition-all text-xs sm:text-sm font-bold text-white/90 gap-4">
+          <span className="hover:text-red-500 transition-colors cursor-default">YouTube Live</span>
+          <span className="hover:text-red-400 transition-colors cursor-default">Custom RTMP Ingest</span>
+          <span className="hover:text-blue-400 transition-colors cursor-default">Google OAuth 2.0</span>
+          <span className="hover:text-emerald-400 transition-colors cursor-default">Android Hardware Encoder</span>
         </div>
       </div>
     </div>
