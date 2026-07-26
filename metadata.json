@@ -1,0 +1,6 @@
+{
+  "name": "NeCast",
+  "description": "Professional Mobile Streaming Directly From Your Android Phone.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
